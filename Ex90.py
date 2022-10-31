@@ -1,8 +1,8 @@
 db = {}
 
 db['nome'] = str(input('Nome: '))
-db['media'] = float(input(f'Média de {n}: '))
-if m >= 7:
+db['media'] = float(input(f'Média de {db["media"]}: '))
+if db['media'] >= 7:
     db['resultado'] = 'APROVADO!'
 else:
     db['resultado'] = 'REPROVADO!'
