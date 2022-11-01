@@ -42,7 +42,7 @@ def arquivoLer(nome):
             print(f'{v:<5} {dado[0]:<30} {dado[1]}')
 
 
-def arquivoADD(arq, nome, idade):
+def arquivoADD(arq, nome='NOME_INDISPONIVEL', idade=0):
     #ADCIONA UM PARAMETRO
     try:
         a = open(arq, 'a')
@@ -62,4 +62,4 @@ def arquivoREM(arq, cod):
         for v, c in enumerate(lista, start=1):
             if v == cod:
                 print(c)
-                lista.clear()
+                lista.pop()

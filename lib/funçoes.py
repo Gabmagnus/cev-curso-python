@@ -30,7 +30,7 @@ def checkint(txt):
             continue
         except KeyboardInterrupt:
             textos('op_int_us')
-            return 3
+            return 4
             break
         else:
             return n
